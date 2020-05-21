@@ -1,19 +1,13 @@
 # Azure-AppService-Logging-Storage-VNET-Restriction
 Information regarding enabling storage account firewall to access from Azure App Service 
 
-### Enable diagnostics logging for apps in Azure App Service
-
-## Overview
-Azure provides built-in diagnostics to assist with debugging an App Service app. In this article, you learn how to enable diagnostic logging and add instrumentation to your application, as well as how to access the information logged by Azure.
-
-
 ### Restrict your storage account to a virtual network
 
-When you written the application logging & webserver logging to storage account for azure app service. You can't currently use any virtual network restrictions on this account. If you configure a virtual network service endpoint on the storage account you're using for your app service logs, that configuration will break your application logging to storage account.
+When we are writing application and/or Web Server logs to a storage account for Azure App Service, as of today we cannot configure any virtual network restrictions on the respective storage account. If we configure a virtual network service endpoint on the storage account being used for storing App Service logs, that configuration will break the application logging to the storage account.
 
-This is the known issue in Azure App Service and our product team is working on the issue is diligently fix it in the upcoming rollouts.
+This is a known issue in Azure App Services and our product team is pro-actively working to fix this in a future updates.
 
-#Here is the brief RCA from the product team on this
+# Here is the brief RCA from the product team on this
 ```json
 The Microsoft Azure Team has investigated the issue you reported on not being able to upload the Logs to Storage account.
 This is a limitation of our existing functionality. We have opened a work item for this and we hope to support this functionality soon
