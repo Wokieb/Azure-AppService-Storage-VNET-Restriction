@@ -7,7 +7,7 @@ When we are writing application and/or Web Server logs to a storage account for 
 
 This is a known issue in Azure App Services and our product team is pro-actively working to fix this in a future updates.
 
-# Here is the brief RCA from the product team on this
+** Here is the brief RCA from the product team on this
 ```json
 The Microsoft Azure Team has investigated the issue you reported on not being able to upload the Logs to Storage account.
 This is a limitation of our existing functionality. We have opened a work item for this and we hope to support this functionality soon
