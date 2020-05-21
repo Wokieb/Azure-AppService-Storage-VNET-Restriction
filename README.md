@@ -3,7 +3,7 @@ Information regarding enabling storage account firewall to access from Azure App
 
 ### Enable diagnostics logging for apps in Azure App Service
 
-##Overview
+## Overview
 Azure provides built-in diagnostics to assist with debugging an App Service app. In this article, you learn how to enable diagnostic logging and add instrumentation to your application, as well as how to access the information logged by Azure.
 
 
